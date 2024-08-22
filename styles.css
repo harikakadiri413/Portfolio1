@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ;
+}
+.logo:hover{
+    color: blueviolet;
+    text-shadow: 0 0 25px blueviolet,
+                 0 0 50px blueviolet;
+    transform: scale(1.1);
+}
+span{
+    color: blueviolet;
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: blueviolet;
+    border-bottom: 3px solid orchid;
+}
+.contact{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.contact:hover{
+    background-color: blueviolet;
+    box-shadow: 0 0 25px blueviolet;
+    color: white;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241,241,241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 25px;
+}
+.home-content h1{
+    font-size:32px;
+    line-height: 1.2;
+}
+.home-content p{
+    width: 345px;
+    display: flex;
+    font-size: 20px;
+}
+.btn-box{
+    width:345px;
+    display: flex;
+    gap: 2em;
+}
+.btn-1{
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border:2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing:  1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.btn-2{
+    padding: 15px 28px;
+    background-color: blueviolet;
+    color: white;
+    border: 2px solid  black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: white;
+    color: blueviolet;
+}
+.img-box img{
+    border-radius: 300%;
+    width: 300px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: blueviolet;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: black;
+}
+.about-img img{
+    position: relative;
+    width: 300px;
+    box-shadow: 0 0 25px blueviolet,
+                0 0 25px blueviolet;
+    border-radius: 50%;
+}
+.about-content h2{
+    text-align: left;
+    color: white;
+    font-size: 40px;
+}
+.about-content h3{
+    font-size: 35px;
+    color: white;
+}
+.about-content p{
+    color: white;
+    font-size: 25px;
+    margin: 2em 0 3em;
+}
+
+.heading{
+    font-size: 6rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+.education h2{
+    margin-bottom: 5rem;
+}
+.timeline-items{
+    max-width: 1200px;
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.timeline-item{
+    margin-bottom: 20px;
+    width: 50%;
+    position: relative;
+}
+.timeline-date{
+    font-size: 20px;
+    font-weight: 800;
+    color:black;
+    margin: 6px 0 15px;
+}
+.timeline-content h3{
+    font-size: 30px;
+    color: black;
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+.timeline-content p{
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.heading{
+    font-size: 6rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+.resume h2{
+    margin-bottom: 5rem;
+}
+.action-btns{
+    text-align: center;
+    margin-top: 20px;
+}
+.portfolio{
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border:2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing:  1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.portfolio:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.heading{
+    font-size: 3rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+.cretifications h2{
+    margin-bottom: 5rem;
+}
